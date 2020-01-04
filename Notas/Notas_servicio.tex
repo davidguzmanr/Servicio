@@ -53,6 +53,8 @@
 {\thesubsubsection.}{0.25cm}{}
 \renewcommand{\thesubsubsection}{\thesubsection.\Roman{subsubsection}}
 
+\setlength\parindent{0pt}
+
 \usepackage[backend=biber,sorting=none]{biblatex}
 \addbibresource{bib.bib}
 
@@ -80,37 +82,7 @@
 
 \section{INTRODUCCIÓN}
 
-\subsection{Solución de Schwarzschild}
-
-La solución de Schwarzschild se considera la solución más sencilla y útil de las ecuaciones de campo de Einstein. Esta solución corresponde a la descripción de un sistema con las siguientes propiedades: \cite{Luminet_1979} \cite{Amarilla_2012} \cite{Amarilla_2018}
-
-\begin{enumerate}
-\item Tiene simetría esférica.
-\item Es estática e invariante bajo inversión temporal
-\item Está en el vacío. 
-\end{enumerate}
-
-La solución de Schwarzschild está dado por el intervalo
-
-\begin{equation}
-\text{d}s^{2} = -\left( 1 - \dfrac{2M}{r} \right)\text{d}t^{2} + \left( 1 - \dfrac{2M}{r} \right)^{-1}\text{d}r^{2}
-+ r^{2}\text{d}\theta^{2} + r^{2}\sin^{2}\theta\text{d}\varphi^{2}
-\label{ec:intervalo_Schwarzschild}
-\end{equation}
-
-La solución de Schwarzschild es particularmente especial debido al llamado teorema de Birkhoff. G. D. Birkhoff demostró en 1923 que cualquier solución con simetría esférica a las ecuaciones de Einstein en el vacío $ \left( \tensor{T}{_\mu_\nu} = 0 \right) $ debe ser estática y asintóticamente plana. La solución de Schwarzschild ha sido construida exigiendo que el espacio–tiempo sea esféricamente simétrico, estático y en el vacío; por lo que la solución no sólo es simple, sino también única.
-
-\subsection{Cantidades conservadas en Schwarzschild}
-
-\subsection{Órbitas de partículas libres en Schwarzschild}
-
-\subsection{Solución de Kerr}
-
-\subsection{Cantidades conservadas en Kerr}
-
-\subsection{Órbitas de partículas libres en Kerr}
-
-\section{HISTORIA DE LA IMAGEN DE UN AGUJERO NEGRO}
+\subsection{HISTORIA DE LA IMAGEN DE UN AGUJERO NEGRO}
 
 Partes del artículo de Luminet acerca de la historia de los agujeros negros queda bien aquí, además de partes de su blog. 
 
@@ -130,15 +102,73 @@ Tan pronto como se desarrollaron los principios básicos de la astrofísica de l
 
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=0.5\linewidth]{Images/marck_1989}
-\caption{Imagen de un agujero negro para distintos ángulos. J.A. Marck (1989).}
-\label{fig:marck1989}
+	\centering
+	\includegraphics[width=0.5\linewidth]{Images/marck_1989}
+	\caption{Imagen de un agujero negro para distintos ángulos. J.A. Marck (1989).}
+	\label{fig:marck1989}
 \end{figure}
 
-\section{Imagen de un agujero negro de Schwarzschild desnudo}
+\subsubsection{Imagen de un agujero negro de Schwarzschild desnudo}
 
-\section{Imagen de un agujero negro de Schwarzschild cubierto}
+\subsubsection{Imagen de un agujero negro de Schwarzschild cubierto}
+
+Antes de comenzar a trabajar, es conveniente introducir las llamadas unidades naturales, definidas por
+
+\begin{equation}
+G = \hbar = c = 1.
+\label{ec:unidades naturales}
+\end{equation}
+
+
+\section{Solución de Schwarzschild}
+
+La solución de Schwarzschild se considera la solución más sencilla y útil de las ecuaciones de campo de Einstein. Esta solución corresponde a la descripción de un sistema con las siguientes propiedades: \cite{Luminet_1979} \cite{Amarilla_2012} \cite{Amarilla_2018}
+
+\begin{enumerate}
+\item Tiene simetría esférica.
+\item Es estática e invariante bajo inversión temporal
+\item Está en el vacío. 
+\end{enumerate}
+
+La solución de Schwarzschild está dado por el intervalo
+
+\begin{equation}
+\text{d}s^{2} = -\left( 1 - \dfrac{2M}{r} \right)\text{d}t^{2} + \left( 1 - \dfrac{2M}{r} \right)^{-1}\text{d}r^{2}
++ r^{2}\text{d}\theta^{2} + r^{2}\sin^{2}\theta\text{d}\varphi^{2}
+\label{ec:intervalo Schwarzschild}
+\end{equation}
+
+La solución de Schwarzschild es particularmente especial debido al llamado teorema de Birkhoff. G. D. Birkhoff demostró en 1923 que cualquier solución con simetría esférica a las ecuaciones de Einstein en el vacío $ \left( \tensor{T}{_\mu_\nu} = 0 \right) $ debe ser estática y asintóticamente plana. La solución de Schwarzschild ha sido construida exigiendo que el espacio–tiempo sea esféricamente simétrico, estático y en el vacío; por lo que la solución no sólo es simple, sino también única.
+
+\subsection{Cantidades conservadas en Schwarzschild}
+
+\subsection{Órbitas de partículas libres en Schwarzschild}
+
+\subsection{Coordenadas celestes}
+
+\section{Solución de Kerr}
+
+El espacio-tiempo alrededor de un agujero negro que rota con masa $M$ y momento angular $J$ puede ser descrito con el intervalo (con $c$ = $G$ = 1)
+
+\begin{equation}
+ds^{2} = -\left( 1 - \dfrac{2Mr}{\rho^{2}} \right)dt^{2} - \dfrac{4Mar\sin^{2}\theta}{\rho^{2}}d\varphi dt + \dfrac{\rho^{2}}{\Delta}dr^{2} + \rho^{2}d\theta^{2} + \left( r^{2} + a^{2} + \dfrac{2Mra^{2}\sin^{2}\theta}{\rho^{2}} \right) \sin^{2}\theta d\varphi^{2},
+\label{ec:intervalo Kerr}
+\end{equation}
+
+donde
+
+\begin{equation}
+a \equiv \dfrac{J}{M}, \quad \rho^{2} \equiv r^{2} + a^{2}\cos^{2}\theta, \quad \Delta \equiv r^{2} - 2Mr + a^{2}. 
+\label{ec:definiciones en Kerr}
+\end{equation}
+
+La métrica definida en \eqref{ec:intervalo Kerr} es una solución exacta a las ecuaciones de campo de Einstein en el vacío, es decir, $G_{\mu\nu} = 0$. Las coordenadas $(t, r, \theta, \varphi)$ usadas en \eqref{ec:intervalo Kerr} se llaman coordenadas de Boyer-Lindquist. 
+
+\subsection{Cantidades conservadas en Kerr}
+
+
+\subsection{Órbitas de partículas libres en Kerr}
+
 
 \printbibliography[title=REFERENCIAS]
 		
