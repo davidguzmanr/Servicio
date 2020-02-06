@@ -124,7 +124,7 @@ function geodesics(λ_final, dλ, r0, ϕ0)
     push!(rs, r0)
     push!(ϕs, ϕ0)
     
-    u0 = -sqrt((1-2*M/r0)*(ϵ^2*(1-2*M/r0)^(-1.0)-(l/r0)^2))
+    u0 = -sqrt(ϵ^2 - (1 - 2*M/r0)*(l^2/r0^2))
     
     r = r0
     u = u0
