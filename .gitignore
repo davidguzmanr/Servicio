@@ -1,12 +1,12 @@
 # Other files and experiments
-Models/Sequence to sequence and attention/Seq2Seq and attention.ipynb
-Models/Sequence to sequence and attention/data/eng-fra.txt
-Models/Sequence to sequence and attention/data/names
-data/nahuatl-spanish/more_data/dictionary
-data/nahuatl-spanish/more_data/Stories.ipynb
-data/nahuatl-spanish/more_data/Bible
-data/nahuatl-spanish/more_data/Constitution
-data/nahuatl-spanish/more_data/Stories
+Notas/Notas_servicio.aux
+Notas/Notas_servicio.bbl
+Notas/Notas_servicio.bcf
+Notas/Notas_servicio.blg
+Notas/Notas_servicio.log
+Notas/Notas_servicio.out
+Notas/Notas_servicio.run.xml
+Notas/Notas_servicio.synctex.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
