@@ -1,4 +1,4 @@
-function dibujar_trayectoria(xs, ys; freq = floor(Int, length(xs)/500))
+function draw_trajectory(xs, ys; freq=floor(Int, length(xs)/500))
     
     xs′ = []
     ys′ = []
@@ -22,16 +22,16 @@ function dibujar_trayectoria(xs, ys; freq = floor(Int, length(xs)/500))
     
     # Para cambiar la fuente https://gr-framework.org/fonts.html
     # http://julia.cookbook.tips/doku.php?id=plotattributes
-    grafica = plot(legend = false, aspect_ratio = 1, xlab = L"x \ (M)", ylab = L"y \ (M)", fontfamily="Times")
+    grafica = plot(legend=false, aspect_ratio=1, xlab=L"x \ (M)", ylab=L"y \ (M)", fontfamily="Times")
     
     grafica = plot!(xs′, ys′)
-    grafica = plot!(circx, circy, color = "black", fill=(0, :black), lw = 2)
+    grafica = plot!(circx, circy, color="black", fill=(0, :black), lw=2)
     
     return grafica
     
 end  
 
-function animar_trayectoria(xs, ys, nombre_gif; freq = floor(Int, length(xs)/50), fps=20) 
+function animate_trajectory(xs, ys; gif_name=nothing, freq=floor(Int, length(xs)/50), fps=20) 
     
     anim = @animate for i in 1:freq:length(xs)
     
@@ -44,12 +44,14 @@ function animar_trayectoria(xs, ys, nombre_gif; freq = floor(Int, length(xs)/50)
         x_min, x_max = minimum(xs), maximum(xs)
         y_min, y_max = minimum(ys), maximum(ys)
 
-        dibujar_trayectoria(xs_p, ys_p, freq = 10)
-        scatter!(x_f, y_f, color = "black", markersize = 1)
-        plot!(xlims = (x_min, x_max), ylims = (y_min, y_max)) 
+        draw_trajectory(xs_p, ys_p, freq=10)
+        scatter!(x_f, y_f, color="black", markersize=1)
+        plot!(xlims=(x_min, x_max), ylims=(y_min, y_max)) 
         
     end
 
-    gif(anim, nombre_gif, fps = fps) 
+    if gif_name != nothing
+        gif(anim, gif_name, fps=fps) 
+    end
 
 end
