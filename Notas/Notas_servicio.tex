@@ -89,19 +89,43 @@ Visto en proyección sobre el cielo, el horizonte de sucesos tendría el aspecto
 
 Ahora, en condiciones astrofísicas típicas, un agujero negro realista, sea cual sea su tamaño, rara vez está desnudo, sino que está rodeado de material gaseoso. Al caer, el gas forma un disco de acreción caliente dentro del cual emite un espectro característico de radiación electromagnética. Por tanto, a pesar de que un agujero negro permanece invisible por sí mismo, atrae de manera característica a la materia cercana. \medskip
 
-Tan pronto como se desarrollaron los principios básicos de la astrofísica de los agujeros negros en la década de 1970, los físicos se preguntaron cómo se vería un agujero negro rodeado de material luminoso. Actualmente, se pueden ver muchas representaciones educativas o artísticas,sin embargo, estas imágenes no informan describen la física detrás. Ésta puede describirse correctamente por medio de simulaciones numéricas, teniendo en cuenta las complejas distorsiones que el fuerte campo gravitacional imprime en el espacio-tiempo y las trayectorias de los rayos de luz. Los primeros cálculos comenzaron hace más de 40 años. 
+Tan pronto como se desarrollaron los principios básicos de la astrofísica de los agujeros negros en la década de 1970, los físicos se preguntaron cómo se vería un agujero negro rodeado de material luminoso. Actualmente, se pueden ver muchas representaciones educativas o artísticas, sin embargo, estas imágenes no informan describen la física detrás. Ésta puede describirse correctamente por medio de simulaciones numéricas, teniendo en cuenta las complejas distorsiones que el fuerte campo gravitacional imprime en el espacio-tiempo y las trayectorias de los rayos de luz.  \medskip
 
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\linewidth]{Images/marck_1989}
-	\caption{Imagen de un agujero negro para distintos ángulos. Imagen tomada de \cite{Luminet_blog}}
-	\label{fig:marck1989}
+\centering
+\includegraphics[width=0.3\linewidth]{Images/marck_1989.jpg}
+\caption{Imagen de un agujero negro para distintos ángulos. Imagen tomada de \cite{Luminet_blog}}
+\label{fig:marck1989}
 \end{figure}
 
-\subsubsection{Imagen de un agujero negro de Schwarzschild desnudo}
+El estudio de las imágenes de agujeros negros comenzaron en 1972 en una escuela de verano en Francia, donde se presentó un análisis exhaustivo de la propagación de rayos de luz alrededor de un agujero negro de Kerr. La solución de Kerr para un agujero negro giratorio se había descubierto tan sólo diez años antes y desde entonces centró la atención de muchos investigadores de la relatividad general, porque representaba el estado de equilibrio más general de un agujero negro astrofísico. \medskip
 
-\subsubsection{Imagen de un agujero negro de Schwarzschild cubierto}
+La métrica del espacio-tiempo de Kerr depende de dos parámetros: la masa del agujero negro $M$ y su momento angular normalizado $a$. Una diferencia importante con las estrellas habituales, que están en rotación diferencial, es que los agujeros negros de Kerr giran con una rigidez perfecta: todos los puntos en su horizonte de eventos se mueven con la misma velocidad angular. \medskip
+
+Sin embargo, existe un momento angular crítico $a = M$ (en unidades donde $G = c = 1$) por encima del cual el horizonte de sucesos se \emph{rompe}: este límite corresponde al horizonte que tiene una velocidad de giro igual a la velocidad de la luz. Para tal agujero negro, llamado \emph{extremo}, el campo gravitacional en el horizonte de sucesos se cancelaría, porque la atracción hacia adentro de la gravedad sería compensada por las enormes fuerzas centrífugas repulsivas. La rotación del agujero negro afecta la forma de la sombra que el horizonte de sucesos proyecta sobre la luz de un campo de estrellas de fondo. Para un agujero negro que gira cerca del momento angular máximo, el resultado es una sombra en forma de D, como se observa en la figura \ref{fig:sombra_kerr}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Images/kerr_shadow.png}
+\caption{Forma aparente de la sombra de un agujero negro extremo de Kerr visto por un observador distante en el plano ecuatorial.}
+\label{fig:sombra_kerr}
+\end{figure}
+
+\subsubsection{Primera imagen de un disco de acreción de un agujero negro}
+
+Los discos de acreción se forman en algunos sistemas de estrellas dobles que emiten radiación de rayos X (con agujeros negros de unas pocas masas solares) y en los centros de muchas galaxias (con agujeros negros de millones de masas solares). Sus imágenes de cerca deben experimentar deformaciones ópticas extraordinarias, debido a la desviación de los rayos de luz producida por la fuerte curvatura del espacio-tiempo en las inmediaciones del agujero negro. La relatividad general y una computadora permiten calcular tal efecto. \medskip
+
+Alrededor de un agujero negro, todo se comporta de manera diferente debido a las deformaciones ópticas debidas a la curvatura del espacio-tiempo, como se muestra en la figura \ref{fig:acrecion_schwarzschild}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Images/black_hole_distortions.png}
+\caption{Distorsiones ópticas cerca de un agujero negro. Imagen tomada de \cite{Luminet_1992}.}
+\label{fig:acrecion_schwarzschild}
+\end{figure}
+
+\newpage
 
 Antes de comenzar a trabajar, es conveniente introducir las llamadas unidades naturales, definidas por
 
@@ -111,7 +135,7 @@ G = \hbar = c = 1.
 \end{equation}
 
 
-\section{Solución de Schwarzschild}
+\section{SOLUCIÓN DE SCHWARZSCHILD}
 
 La solución de Schwarzschild se considera la solución más sencilla y útil de las ecuaciones de campo de Einstein. Esta solución corresponde a la descripción de un sistema con las siguientes propiedades: \cite{Luminet_1979} \cite{Amarilla_2012} \cite{Amarilla_2018}
 
@@ -137,7 +161,9 @@ La solución de Schwarzschild es particularmente especial debido al llamado teor
 
 \subsection{Coordenadas celestes}
 
-\section{Solución de Kerr}
+\newpage
+
+\section{SOLUCIÓN DE KERR}
 
 El espacio-tiempo alrededor de un agujero negro que rota con masa $M$ y momento angular $J$ puede ser descrito con el intervalo (con $c$ = $G$ = 1)
 
@@ -160,7 +186,7 @@ La métrica definida en \eqref{ec:intervalo Kerr} es una solución exacta a las 
 
 \subsection{Órbitas de partículas libres en Kerr}
 
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{bib.bib}
 	
 \end{document}
