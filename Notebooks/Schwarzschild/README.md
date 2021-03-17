@@ -6,4 +6,4 @@ Notebooks para la métrica de Schwarzschild.
 - [Schwarzschild 3D](https://github.com/davidguzmanr/Servicio-Fisica/blob/master/Notebooks/Schwarzschild/Schwarzschild%203D.ipynb) contiene el caso general con ayuda de [einsteinpy](https://github.com/einsteinpy/einsteinpy).
 - [Sombra](https://github.com/davidguzmanr/Servicio-Fisica/blob/master/Notebooks/Schwarzschild/Sombra.ipynb) contiene la representación de la sombra de un agujero negro de Schwarzschild con ayuda de [einsteinpy](https://github.com/einsteinpy/einsteinpy).
 
-<img src="Animations/shadow.png"></img>
+<img src="Animations/shadow.png" width="350" height="350"></img>
